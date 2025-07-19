@@ -30,9 +30,9 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.11.17/libphonenumber-js.min.js" integrity="sha512-JFbywe8/knwmSlszErleCKSV66ey9S/k0IDBX18RLPg7kxpFrTB6mOiDYmOWou0zR7Oz6wCl1C/k33AGDYIlyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.11.17/libphonenumber-js.min.js" async integrity="sha512-JFbywe8/knwmSlszErleCKSV66ey9S/k0IDBX18RLPg7kxpFrTB6mOiDYmOWou0zR7Oz6wCl1C/k33AGDYIlyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -42,9 +42,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/marquee3000@1.1.0/marquee3k.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/marquee3000@1.1.0/marquee3k.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marquee3000@1.1.0/marquee3k.min.js" async></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
 
   
 <style>@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,600);</style>
@@ -72,31 +72,34 @@
 
 
   <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '287529802474338');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=287529802474338&ev=PageView&noscript=1"
-    /></noscript>
+  <script>
+    setTimeout(function() {
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '287529802474338');
+      fbq('track', 'PageView');
+    }, 2500); // adia 2,5 segundos
+  </script>
   <!-- End Meta Pixel Code -->
 
 
   
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id=GTM-P5QXQ7K'+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P5QXQ7K');</script>
+<script>
+  setTimeout(function() {
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5QXQ7K');
+  }, 3000); // adia 3 segundos
+</script>
   <!-- End Google Tag Manager -->
 
 
