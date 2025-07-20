@@ -149,20 +149,6 @@ body {
 }
 
 
-.animate-fade-right {
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: fadeRight .5s ease-out forwards;
-}
-
-
-.animate-fade-left {
-  opacity: 0;
-  transform: translateX(100%);
-  animation: fadeLeft .5s ease-out forwards;
-}
-
-
 .marquee3k span {
   display: inline-block;
 }
